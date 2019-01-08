@@ -11,7 +11,7 @@ class Scraper
         student_profile = "#{student.attr("href")}"
         student_location = student.css("p").text
         student_name = student.css("h4").text
-        students << {name: studen_name, location: student_location, profile_url: student_profile}
+        students << {name: student_name, location: student_location, profile_url: student_profile}
       end
     end
     students
